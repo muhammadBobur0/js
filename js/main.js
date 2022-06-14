@@ -50,7 +50,7 @@ function sam (elvLU) {
 
 
 // function eltime (elman, elvLU) {
-//   return  elman == "man" ? text.textContent = Math.round (elvLU / 3.6)  : console.log(" "); 
+  // return  elman == "man" ? text.textContent = Math.round (elvLU / 3.6)  : console.log(" "); 
 // };
 
 // function elvelo (elman, elvLU) {
