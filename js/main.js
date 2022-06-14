@@ -1,7 +1,7 @@
 var elForm = document.querySelector(".form");
 var elKM = document.querySelector(".inputkm");
 var textDanger = document.querySelector(".text");
-var elman = document.getElementsByTagName("input");
+var elman = document.querySelector(".input-men");
 var text = document.querySelector(".man-strong");
 var eltext =document.querySelector(".text");
 var elveloso = document.querySelector(".velo-strong");
@@ -28,7 +28,7 @@ elForm.addEventListener('submit', function (e){
 
 
 function eltime (elman, elvLU) {
-  return  elman.value == "man" ? text.textContent = Math.round (elvLU / 3.6)  : console.log(" "); 
+  return  elman == "man" ? text.textContent = Math.round (elvLU / 3.6)  : console.log(" "); 
 };
 
 function elvelo (elman, elvLU) {
