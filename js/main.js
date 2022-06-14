@@ -1,16 +1,17 @@
 var elForm = document.querySelector(".form");
 var elKM = document.querySelector(".inputkm");
 var textDanger = document.querySelector(".text");
-var elman = document.querySelector(".input-men");
+var elman = document.getElementsByTagName("input");
 var text = document.querySelector(".man-strong");
-var eltext =document.querySelector(".text")
+var eltext =document.querySelector(".text");
+var elveloso = document.querySelector(".velo-strong");
+var elinputValu = document.querySelector(".input-velo");
 
 
 
 elForm.addEventListener('submit', function (e){
   e.preventDefault()
   var elvLU = Number(elKM.value) 
-  var elma = elman.value
   
   if (isNaN(elvLU)) {
     eltext.textContent = "harif  mumkin emas"
@@ -18,20 +19,18 @@ elForm.addEventListener('submit', function (e){
   } if (elvLU < 0) {
     eltext.textContent = "0 dan kichik sonlar kirg'azish mumkin emas"
     return
-  }else {
-    eltext.textContent = "son kirgazin"
   }
 
-  // text.textContent = eltime(elvLU, elma);
-  
+  eltime(elman, elvLU)
   
 });
 
 
 
+function eltime (elman, elvLU) {
+  return  elman.value == "man" ? text.textContent = Math.round (elvLU / 3.6)  : console.log(" "); 
+};
 
-function eltime (elvLU, elma) {
-  if (elma == "man") {
-    return Math.round(elvLU / 3.6) 
-  }
+function elvelo (elman, elvLU) {
+  return  elman == "car" ? elveloso.textContent = Math.round (elvLU / 3.6)  : console.log(" ") 
 };
